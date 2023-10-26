@@ -1,4 +1,5 @@
-from jwt import encode, decode
+from jwt import decode, encode
+
 
 def create_token(data: dict):
     token: str = encode(payload=data, key="my_secret_key", algorithm="HS256")
